@@ -1,24 +1,14 @@
 /* -------------------------------------------
 Name:Kartik Budhiraja
-Student number:120592175
-Email:kbudhiraja@myseneca.ca
-Section:SVV
 Date:30-11-2017
 ----------------------------------------------
-Assignment: 1
-Milestone:  4
+Employee Management System
 ---------------------------------------------- */
 
 #define _CRT_SECURE_NO_WARNINGS
 #define _NO_CRT_STDIO_INLINE
 
 #include <stdio.h>
-
-// This source file needs to "know about" the structures you declared
-// in the header file before referring to those new types:
-// HINT: put the header file name in double quotes so the compiler knows
-//       to look for it in the same directory/folder as this source file
-// #include your contacts header file on the next line:
 #include "contacts.h"                     //includes the header file which contains the definitions of all the structures
 
 int main(void)
@@ -26,16 +16,14 @@ int main(void)
 	// Declare variables here:
 	struct Name fullName = { "","","" };                           //Creating an object and Initializing each member to empty string
 	struct Address fullAddress = { 0,"\0",0,"\0","\0" };                 //Creating an object and Initializing each member to empty string or zero
-	struct Numbers allNumbers = { "","","" };                         //Creating an object and Initializing each member to empty string
-	// Create a variable of type Contact and call it something self-describing like "contact"
-	// - HINT: Be sure to initialize the values to 0 and empty C strings
+	struct Numbers allNumbers = { "","","" };                       
+	
 	struct Contact contact;
 	contact.name = fullName;                  //making all the initial values to empty string by making the object equal to the object with empty string values 
-	contact.address = fullAddress;            //making all the initial values to empty string by making the object equal to the object with empty string values 
-	contact.number = allNumbers;	          //making all the initial values to empty string by making the object equal to the object with empty string values 
-
+	contact.address = fullAddress;          
+	contact.number = allNumbers;	         
 	// Display the title
-	printf("Contact Management System\n");                         //displaying the title
+	printf("Contact Management System\n");                        
 	printf("-------------------------\n");
 
 	// Call the Contact function getName to store the values for the Name member

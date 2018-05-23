@@ -1,28 +1,19 @@
 /* -------------------------------------------
 Name:Kartik Budhiraja
-Student number:120592175
-Email:kbudhiraja@myseneca.ca
-Section:SVV
 Date:30-11-2017
 ----------------------------------------------
-Assignment: 1
-Milestone:  4
+Employee Management System
 ---------------------------------------------- */
-// this includes all the logic of functions included
+// this file includes all the logic of functions included
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 
-// This source file needs to "know about" the structures you declared
-// in the header file before referring to those new types:
-// HINT: put the header file name in double quotes so the compiler knows
-//       to look for it in the same directory/folder as this source file
-// #include your contacts header file on the next line:
+
 #include "contacts.h"
 
 
-// Get and store from standard input the values for Name
-// Put your code here that defines the Contact getName function:
+
 void getName(struct Name *name) {                                       //definition of function which will ask the user to enter values for name
 	char tester;
 	printf("Please enter the contact's first name: ");
@@ -38,8 +29,7 @@ void getName(struct Name *name) {                                       //defini
 }
 
 
-// Get and store from standard input the values for Address
-// Put your code here that defines the Contact getAddress function:
+
 void getAddress(struct Address *address) {                                 //definition of function which will ask the user to enter values for address
 	char tester;
 	printf("Please enter the contact's street number: ");            //accepting values for address
@@ -61,8 +51,7 @@ void getAddress(struct Address *address) {                                 //def
 
 
 
-// Get and store from standard input the values for Numbers
-// Put your code here that defines the Contact getNumbers function:
+
 
 void getNumbers(struct Numbers *number) {                                  //definition of function which will ask the user to enter values for contact
 	char tester;

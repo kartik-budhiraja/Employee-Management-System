@@ -1,23 +1,17 @@
 /* -------------------------------------------
-Name:kartik budhiraja
-Student number:120592175
-Email:kbudhiraja@myseneca.ca
-Section:svv
+Name:Kartik Budhiraja
 Date:30-11-2017
 ----------------------------------------------
-Assignment: 1
-Milestone: 4
+Employee Management System
 ---------------------------------------------- */
-//declaration of all structures and functions to be included in the main program
-// Structure type Name declaration
+
 struct Name {                             //structure which contains name deatils:firstname,middleinitial,lastname
 	char firstName[31];
 	char middleInitial[7];
 	char lastName[36];
 };
 
-// Structure type Address declaration
-// Place your code from Milestone #2 here...
+
 struct Address {                    //structure which contains address details:streetnumber,street name,city
 	int streetnumber;
 	char street[41];
@@ -27,8 +21,7 @@ struct Address {                    //structure which contains address details:s
 };
 
 
-// Structure type Numbers declaration
-// Place your code from Milestone #2 here...
+
 struct Numbers {                   //structure which contains numbers like cell,home or business
 	char cell[21];
 	char home[21];
@@ -37,8 +30,7 @@ struct Numbers {                   //structure which contains numbers like cell,
 
 
 
-// Structure type Contact declaration
-// Place your code here...
+
 struct Contact {                   //contact structure contains objects of structures Name,Address,Numbers as a member of it to store the value of each contact
 	struct Name name;              //object of struct Name
 	struct Address address;        //object of struct Address
@@ -47,22 +39,13 @@ struct Contact {                   //contact structure contains objects of struc
 
 
 
-//------------------------------------------------------
-// Function Prototypes
-//------------------------------------------------------
 
-// ====== Milestone 4 =======
-
-// Get and store from standard input the values for Name
-// Place your code here...
 void getName(struct Name *name);   //prototype of function that stores the values of fullname
 
 
-// Get and store from standard input the values for Address
-// Place your code here...
+
 void getAddress(struct Address *address);  //prototype of function that stores the values of the complete address
 
-// Get and store from standard input the values for Numbers
-// Place your code here...
+
 void getNumbers(struct Numbers *number);    //prototype of function that stores the values of the complete contact information
 
